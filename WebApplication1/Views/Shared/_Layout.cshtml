@@ -36,7 +36,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
 
-<body>
+
 
 
     <body class="page-container-bg-solid">
@@ -283,16 +283,16 @@
                 </div>
             </div>
 
+            <div class="container body-content">
+                @RenderBody()
+                <hr />
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                </footer>
+            </div>
 
         </div>
 
-        <div class="container body-content">
-            @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-            </footer>
-        </div>
 
         <!-- BEGIN QUICK NAV -->
         <!-- END QUICK NAV -->
@@ -316,7 +316,7 @@
 
 
         <!-- END THEME LAYOUT SCRIPTS -->
-    </body>
+
 
    
 
